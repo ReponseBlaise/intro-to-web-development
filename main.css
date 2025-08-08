@@ -18,6 +18,9 @@
   display: flex;
   justify-content: space-between;
 }
+.navbar li a {
+  text-decoration: none;
+}
 
 li {
   display: inline-block;
