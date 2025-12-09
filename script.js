@@ -1,13 +1,32 @@
 function changeBackgroundColor(color){
-  let section = document.getElementById('journey');
-  section.style.backgroundColor = color;
+  const section = document.getElementById('journey');
+  if(section) section.style.backgroundColor = color;
 }
 
-document.getElementById('intro').addEventListener('click', () => changeBackgroundColor("#2CA02C"));
-document.getElementById('react').addEventListener('click', () => changeBackgroundColor("#FF7F0E"));
-document.getElementById('backend').addEventListener('click', () => changeBackgroundColor("#9467BD"));
+const cardUi = document.getElementById('card-uiux');
+const cardJava = document.getElementById('card-java');
+const cardIt = document.getElementById('card-it');
 
-// Dark/Light Mode Toggle
-document.getElementById('modeToggle').addEventListener('click', () => {
-  document.body.classList.toggle("dark-mode");
+if(cardUi) cardUi.addEventListener('click', () => changeBackgroundColor('#2CA02C'));
+if(cardJava) cardJava.addEventListener('click', () => changeBackgroundColor('#FF7F0E'));
+if(cardIt) cardIt.addEventListener('click', () => changeBackgroundColor('#9467BD'));
+
+/* DARK / LIGHT MODE */
+const modeToggle = document.getElementById('modeToggle');
+modeToggle && modeToggle.addEventListener('click', () => {
+  const pressed = modeToggle.getAttribute('aria-pressed') === 'true';
+  document.body.classList.toggle('dark-mode');
+  modeToggle.setAttribute('aria-pressed', String(!pressed));
+  modeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+
+/* Enter key accessibility */
+[cardUi, cardJava, cardIt].forEach(card => {
+  if(!card) return;
+  card.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter' || e.key === ' ') {
+      card.click();
+      e.preventDefault();
+    }
+  });
 });
