@@ -1,62 +1,78 @@
-/* Removes unwanted styling from the page */
+/* GLOBAL RESET */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: none;
-  max-width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Write your code below this */
+body.dark-mode {
+  background: #1A1A1A;
+  color: white;
+}
 
+/* NAVBAR */
 .navbar {
   width: 100%;
-  padding: 26px 60px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
-}
-.navbar li a {
-  text-decoration: none;
+  align-items: center;
 }
 
-li {
+.navbar-items li {
   display: inline-block;
-  list-style-type: none;
   margin: 0 12px;
 }
+
+.navbar-items li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.mode-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #52647E;
+  color: white;
+}
+
+/* HERO */
 .hero {
   background-image: url('/images/hero.png');
   height: 500px;
-  padding-top: 219px;
-  padding-left: 103px;
+  padding-top: 200px;
+  padding-left: 100px;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
+.hero-buttons button {
+  margin-right: 10px;
 }
 
 button {
-  margin-top: 35px;
+  margin-top: 20px;
   padding: 12px 30px;
   background: #52647E;
   color: white;
   border-radius: 10px;
-}
-.journey {
-  background: #618379;
-  padding: 57px 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-h2 {
-  color: white;
-  font-size: 32px;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 57px;
+button:hover {
+  transform: scale(1.05);
+  background: #41536B;
+}
+
+/* JOURNEY/ SKILLS */
+.journey {
+  background: #618379;
+  padding: 60px 0;
 }
 
 .journey-list {
@@ -71,20 +87,40 @@ h2 {
   background-color: white;
   padding: 25px;
   border-radius: 40px;
-  color:gray;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.journey-image {
-  border-radius: 25px;
-  margin-bottom: 25px;
+.journey-card:hover {
+  transform: translateY(-10px);
 }
 
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 12px;
-  color: black;
+/* PROJECTS */
+.projects {
+  padding: 60px 0;
 }
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.project-card {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
 footer {
   background: #333232;
   text-align: center;

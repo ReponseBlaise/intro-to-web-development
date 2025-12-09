@@ -3,83 +3,102 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Learn - Get Started Today</title>
-  <meta name="description" content="Learn is a platform that offers free courses for everyone. Start learning today!" />
-  <!-- CSS -->
+  <title>Blaise | Software Engineering & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Mushimiyumukiza Blaise, a Software Engineering student specializing in UI/UX Design, Web Development, Java Programming, and IT Support." />
   <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
- 
-  <!-- Navbar section -->
+
+  <!-- Navbar -->
   <nav class="navbar">
-  <div class="navbar-logo">
-    <img src="./images/logo.png" width="300" />
-  </div>
-  <ul class="navbar-items">
-    <li><a href="#" >About  Me</a></li>
-    <li><a href="#">Journey</a></li>
-    <li><a href="#">Goals</a></li>
-  </ul>
-</nav>
+    <div class="navbar-logo">
+      <img src="./images/logo.png" width="250" />
+    </div>
+    <ul class="navbar-items">
+      <li><a href="#">About Me</a></li>
+      <li><a href="#journey">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
 
-  <!-- Hero section -->
+    <!-- Dark/Light Mode Toggle -->
+    <button id="modeToggle" class="mode-btn">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
   <div class="hero">
-  <h1>
-    Hello! <br />
-    I'm Blaise
-  </h1>
-  <p>A web developer</p>
-  <a href="mailto:mary@jane.com">
-    <button>Contact Me</button>
-  </a>
-</div>
+    <h1>Hello! <br />I'm Blaise</h1>
+    <p>Software Engineering Student | UI/UX Designer</p>
 
-  <!-- Coding journey section -->
-<div id="coding-journey" class="journey">
-  <h2>Coding Journey</h2>
-
-  <div class="journey-list">
-    <div id="intro" class="journey-card">
-      <img
-        src="/images/intro-to-web.png"
-        class="journey-image"
-        alt="Course Image"
-      />
-      <div>
-        <h3>Intro To Web Development</h3>
-        <p>
-          Learned how to build <br />Web Html Projects
-        </p>
-      </div>
+    <div class="hero-buttons">
+      <a href="mailto:mushimiyumukizab@gmail.com"><button>Contact Me</button></a>
+      <a href="./Blaise-CV.pdf" download><button class="cv-btn">Download CV</button></a>
     </div>
+  </div>
 
-    <div id="react" class="journey-card">
-      <img src="/images/react.png" class="journey-image" alt="Course Image" />
-      <div>
-        <h3>React Development</h3>
-        <p>
-          Learned how to build <br />Single Page Application
-        </p>
+  <!-- Skills Section -->
+  <div id="journey" class="journey">
+    <h2>My Tech Journey</h2>
+
+    <div class="journey-list">
+      <div id="intro" class="journey-card">
+        <img src="/images/uiux.png" class="journey-image" alt="UI/UX" />
+        <div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, wireframes, mockups, prototypes & user research</p>
+        </div>
       </div>
-    </div>
 
-    <div id="backend" class="journey-card">
-      <img src="/images/backend.png" class="journey-image" alt="Course Image" />
-      <div>
-        <h3>Back-end Development</h3>
-        <p>
-          Learned how to build <br />Back-end services
-        </p>
+      <div id="react" class="journey-card">
+        <img src="/images/java.png" class="journey-image" alt="Java" />
+        <div>
+          <h3>Java Development</h3>
+          <p>OOP projects, CRUD apps & backend fundamentals</p>
+        </div>
+      </div>
+
+      <div id="backend" class="journey-card">
+        <img src="/images/it.png" class="journey-image" alt="IT Support" />
+        <div>
+          <h3>IT Support</h3>
+          <p>System setup, troubleshooting & digital documentation</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  <!-- Footer section -->
-<footer>
-  <p>Website Made By M Blaise</p>
-</footer>
+
+  <!-- Portfolio Section -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <img src="/images/prototype.png" alt="UI/UX Project">
+        <h3>Mobile Payment App UI</h3>
+        <p>Designed a clean and simple UI flow for a payment solution using Figma.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="/images/inventory.png" alt="Java Project">
+        <h3>Java Inventory System</h3>
+        <p>Built a console-based inventory CRUD system using OOP principles.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="/images/support.png" alt="Support">
+        <h3>Digital Support System</h3>
+        <p>Improved documentation & digital workflow at Preferred Contractors Ltd.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Portfolio Designed by M. Blaise</p>
+  </footer>
+
   <script src="./script.js"></script>
 </body>
-
 </html>
