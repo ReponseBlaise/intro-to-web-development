@@ -1,104 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>Blaise | Software Engineering & UI/UX Designer</title>
-  <meta name="description" content="Portfolio of Mushimiyumukiza Blaise, a Software Engineering student specializing in UI/UX Design, Web Development, Java Programming, and IT Support." />
-  <link rel="stylesheet" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blaise | Software Engineering & UI/UX</title>
+  <meta name="description" content="Mushimiyumukiza Blaise – Software Engineering student, UI/UX Designer, Java Developer, and IT Support specialist."/>
+  <link rel="stylesheet" href="main.css"/>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <img src="./images/logo.png" width="250" />
-    </div>
-    <ul class="navbar-items">
-      <li><a href="#">About Me</a></li>
-      <li><a href="#journey">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <img src="./images/logo.png" alt="Logo" class="logo"/>
 
-    <!-- Dark/Light Mode Toggle -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+
     <button id="modeToggle" class="mode-btn">🌙</button>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Hello! <br />I'm Blaise</h1>
-    <p>Software Engineering Student | UI/UX Designer</p>
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <h1>Hello, I’m <span>Blaise</span></h1>
+      <p>
+        Software Engineering Student with hands-on experience in  
+        <strong>UI/UX Design, Web Development, Java Programming,</strong>  
+        and <strong>IT Support</strong>.
+      </p>
 
-    <div class="hero-buttons">
-      <a href="mailto:mushimiyumukizab@gmail.com"><button>Contact Me</button></a>
-      <a href="https://drive.google.com/file/d/15Y-gOI-pjtklkWKuIDzQYlUG7JmsYrr-/view?usp=drive_link" download><button class="cv-btn">Download CV</button></a>
-    </div>
-  </div>
-
-  <!-- Skills Section -->
-  <div id="journey" class="journey">
-    <h2>My Tech Journey</h2>
-
-    <div class="journey-list">
-      <div id="intro" class="journey-card">
-        <img src="/images/react.png" class="journey-image" alt="UI/UX" />
-        <div>
-          <h3>UI/UX Design</h3>
-          <p>Figma, wireframes, mockups, prototypes & user research</p>
-        </div>
-      </div>
-
-      <div id="react" class="journey-card">
-        <img src="/images/backend.png" class="journey-image" alt="Java" />
-        <div>
-          <h3>Java Development</h3>
-          <p>OOP projects, CRUD apps & backend fundamentals</p>
-        </div>
-      </div>
-
-      <div id="backend" class="journey-card">
-        <img src="/images/intro-to-web.png" class="journey-image" alt="IT Support" />
-        <div>
-          <h3>IT Support</h3>
-          <p>System setup, troubleshooting & digital documentation</p>
-        </div>
+      <div class="hero-actions">
+        <a href="mailto:mushimiyumukizab@gmail.com" class="btn">Contact Me</a>
+        <a href="https://drive.google.com/file/d/15Y-gOI-pjtklkWKuIDzQYlUG7JmsYrr-/view?usp=sharing"
+           target="_blank" class="btn outline">Download CV</a>
       </div>
     </div>
-  </div>
 
-  <!-- Portfolio Section -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
+    <img src="./images/hero.png" alt="Hero Image" class="hero-img"/>
+  </section>
 
-    <div class="project-container">
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
 
-      <div class="project-card">
-        <img src="/images/react.png" alt="UI/UX Project">
-        <h3>Mobile Payment App UI</h3>
-        <p>Designed a clean and simple UI flow for a payment solution using Figma.</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="./images/react.png" alt="UI/UX"/>
+        <h3>UI / UX Design</h3>
+        <p>Figma, wireframes, prototypes, usability, responsive design.</p>
       </div>
 
-      <div class="project-card">
-        <img src="/images/backend.png" alt="Java Project">
-        <h3>Java Inventory System</h3>
-        <p>Built a console-based inventory CRUD system using OOP principles.</p>
+      <div class="skill-card">
+        <img src="./images/backend.png" alt="Java"/>
+        <h3>Java & Backend</h3>
+        <p>Core Java, OOP, CRUD systems, SQL basics, backend logic.</p>
       </div>
 
-      <div class="project-card">
-        <img src="/images/hero.png" alt="Support">
-        <h3>Digital Support System</h3>
-        <p>Improved documentation & digital workflow at Preferred Contractors Ltd.</p>
+      <div class="skill-card">
+        <img src="./images/intro-to-web.png" alt="IT Support"/>
+        <h3>IT Support</h3>
+        <p>System setup, troubleshooting, documentation & user support.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Portfolio Designed by M. Blaise</p>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project">
+        <img src="./images/react.png" alt="UI Project"/>
+        <h3>Mobile Payment UI</h3>
+        <p>Designed a clean mobile UI using Figma with simple user flow.</p>
+      </div>
+
+      <div class="project">
+        <img src="./images/backend.png" alt="Java Project"/>
+        <h3>Java Inventory System</h3>
+        <p>Console-based inventory CRUD system using OOP principles.</p>
+      </div>
+
+      <div class="project">
+        <img src="./images/hero.png" alt="IT Support"/>
+        <h3>Digital Support & Documentation</h3>
+        <p>Improved internal digital workflows at Preferred Contractors Ltd.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Mushimiyumukiza Blaise | Kigali, Rwanda</p>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
