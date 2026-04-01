@@ -3,167 +3,658 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blaise | Software Engineering & UI/UX</title>
-  <meta name="description" content="Mushimiyumukiza Blaise – Software Engineering student, UI/UX Designer, Java Developer, and IT Support specialist."/>
+  <meta name="description" content="Mushimiyumukiza Blaise – Software Engineering student, UI/UX Designer, Java Developer. Explore projects, skills, and professional experience."/>
+  <meta name="keywords" content="Software Developer, UI/UX Developer, Java, Web Developer, Portfolio"/>
+  <meta name="author" content="Mushimiyumukiza Blaise"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Blaise | Software Developer & UI/UX Designer"/>
+  <meta property="og:description" content="Portfolio showcasing projects in Java, Web Development, and UI/UX Design"/>
+  <meta property="og:url" content="https://mushimiyumukizablaiseportifolio1.vercel.app/"/>
+  <meta property="og:type" content="website"/>
+  <title>Blaise | Software Developer & UI/UX Designer</title>
   <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" type="image/png" href="./images/logo.png"/>
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <header class="navbar">
-    <img src="./images/logo.png" alt="Logo" class="logo"/>
+    <div class="nav-container">
+      <img src="./images/logo.png" alt="Blaise Logo" class="logo"/>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
 
-    <button id="modeToggle" class="mode-btn">🌙</button>
+      <button id="modeToggle" class="mode-btn">🌙</button>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="about">
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Hello, I’m <span>Blaise</span></h1>
-      <p>
-        Software Engineering Student with practical experience in
-        <strong>UI/UX Design, Web Development, Java Programming,</strong>
-        and <strong>IT Support</strong>.
+      <h1>Hi, I'm <span>Blaise</span></h1>
+      <p class="hero-subtitle">
+        Software Engineer | UI/UX Designer | Java Developer
+      </p>
+      <p class="hero-description">
+        Building intuitive digital experiences with modern technologies. Passionate about clean code, 
+        beautiful design, and solving complex problems.
       </p>
 
       <div class="hero-actions">
-        <a href="mailto:mushimiyumukizab@gmail.com" class="btn">Contact Me</a>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
         <a href="https://drive.google.com/file/d/15Y-gOI-pjtklkWKuIDzQYlUG7JmsYrr-/view?usp=sharing"
-           target="_blank" class="btn outline">Download CV</a>
+           target="_blank" class="btn btn-outline">Download CV</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/ReponseBlaise" target="_blank" title="GitHub">
+          <img src="./images/github-icon.svg" alt="GitHub" class="social-icon"/>
+        </a>
+        <a href="https://linkedin.com/in/blaise-mushimiyumukiza" target="_blank" title="LinkedIn">
+          <img src="./images/linkedin-icon.svg" alt="LinkedIn" class="social-icon"/>
+        </a>
+        <a href="mailto:mushimiyumukizab@gmail.com" title="Email">
+          <img src="./images/email-icon.svg" alt="Email" class="social-icon"/>
+        </a>
       </div>
     </div>
 
-    <img src="./images/hero.png" alt="Hero Image" class="hero-img"/>
+    <div class="hero-image">
+      <img src="./images/hero.png" alt="Blaise Profile" class="hero-img"/>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p class="section-subtitle">Get to know who I am</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a Software Engineering student from Kigali, Rwanda, with a passion for creating 
+            meaningful digital experiences. With hands-on experience in full-stack development, 
+            UI/UX design, and database management, I bring both technical expertise and creative 
+            thinking to every project.
+          </p>
+          
+          <p>
+            Currently, I work as an IT Support specialist while continuously expanding my skillset 
+            through real-world projects and learning new technologies. My goal is to become a 
+            versatile software engineer who can bridge the gap between beautiful design and robust 
+            backend systems.
+          </p>
+
+          <div class="about-info">
+            <div class="info-item">
+              <strong>Location:</strong>
+              <span>Kigali, Rwanda</span>
+            </div>
+            <div class="info-item">
+              <strong>Email:</strong>
+              <span><a href="mailto:mushimiyumukizab@gmail.com">mushimiyumukizab@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+              <strong>GitHub:</strong>
+              <span><a href="https://github.com/ReponseBlaise" target="_blank">@ReponseBlaise</a></span>
+            </div>
+            <div class="info-item">
+              <strong>Current Role:</strong>
+              <span>IT Support Specialist | Software Engineering Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="./images/hero.png" alt="Blaise" class="profile-img"/>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="./images/react.png" alt="UI/UX"/>
-        <h3>UI / UX Design</h3>
-        <p>Figma, wireframes, prototypes, usability, responsive design.</p>
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
       </div>
 
-      <div class="skill-card">
-        <img src="./images/backend.png" alt="Java"/>
-        <h3>Java & Backend</h3>
-        <p>Core Java, OOP, CRUD systems, SQL fundamentals.</p>
+      <div class="skills-content">
+        <div class="skills-visual">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Figma & UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Responsive Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 87%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL & Databases</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 84%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OOP & Design Patterns</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 86%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Other Skills</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Git & Version Control</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">IT Support & Systems</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Problem Solving</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 89%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Team Collaboration</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./images/react.png" alt="UI/UX Design"/>
+            <h3>UI / UX Design</h3>
+            <p>Figma, Wireframing, Prototyping, Usability Testing, Responsive Design</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/backend.png" alt="Backend Development"/>
+            <h3>Backend Development</h3>
+            <p>Core Java, OOP, CRUD Systems, SQL, Database Design, PHP</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/intro-to-web.png" alt="Web Development"/>
+            <h3>Web Development</h3>
+            <p>HTML5, CSS3, JavaScript, Responsive Design, Performance Optimization</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="./images/intro-to-web.png" alt="IT Support"/>
+            <h3>IT Support</h3>
+            <p>System Setup, Troubleshooting, Documentation, User Support, Network Basics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / TIMELINE -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience & Education</h2>
+        <p class="section-subtitle">My professional journey</p>
       </div>
 
-      <div class="skill-card">
-        <img src="./images/intro-to-web.png" alt="IT Support"/>
-        <h3>IT Support</h3>
-        <p>System setup, troubleshooting, documentation & user support.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>IT Support Specialist</h3>
+            <p class="timeline-company">Preferred Contractors Ltd. | Kigali, Rwanda</p>
+            <p class="timeline-date">2024 - Present</p>
+            <p class="timeline-description">
+              Provide technical support to end-users, manage IT infrastructure, troubleshoot system issues, 
+              and document solutions. Collaborate with teams to ensure smooth IT operations.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Resolved 100+ technical issues with 90%+ first-contact resolution rate</li>
+              <li>Implemented system optimization strategies reducing downtime by 40%</li>
+              <li>Created comprehensive IT documentation and user guides</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software Engineering Student</h3>
+            <p class="timeline-company">The Gym Rwanda | Kigali, Rwanda</p>
+            <p class="timeline-date">2023 - 2024</p>
+            <p class="timeline-description">
+              Intensive bootcamp focusing on full-stack web development and software engineering fundamentals. 
+              Completed multiple projects in HTML, CSS, JavaScript, Java, and UI/UX design.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Built 5+ full-stack projects from concept to deployment</li>
+              <li>Mastered responsive web design and modern JavaScript techniques</li>
+              <li>Learned UI/UX design principles and Figma prototyping</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Computer Science Education</h3>
+            <p class="timeline-company">University Education | Rwanda</p>
+            <p class="timeline-date">2021 - Present</p>
+            <p class="timeline-description">
+              Pursuing formal education in software engineering with focus on computer science fundamentals, 
+              database design, and software architecture.
+            </p>
+            <ul class="timeline-highlights">
+              <li>Completed core computer science courses with distinction</li>
+              <li>Database Design and SQL expertise (PL/SQL Capstone)</li>
+              <li>Software project development and team collaboration</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="projects">
-    <h2>GitHub Projects</h2>
-
-    <div class="projects-grid">
-
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/CRUD-operation" target="_blank">
-            CRUD Operation Web App
-          </a>
-        </h3>
-        <p>
-          Full-stack CRUD application demonstrating create, read, update, and delete
-          operations with backend logic and persistent data handling.
-        </p>
-        <span>Tech: HTML, CSS, JavaScript, PHP</span>
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Showcase of my best work</p>
       </div>
 
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/exercises" target="_blank">
-            Java Programming Exercises
-          </a>
-        </h3>
-        <p>
-          A collection of Java exercises showcasing core object-oriented programming,
-          loops, conditions, and algorithmic problem-solving.
-        </p>
-        <span>Tech: Java</span>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="java">Java / Backend</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
       </div>
 
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/-Thur_26229_Blaise_plsql_CapstoneProject" target="_blank">
-            PL/SQL Capstone Project
-          </a>
-        </h3>
-        <p>
-          Database capstone project implementing schema design, stored procedures,
-          and advanced SQL queries.
-        </p>
-        <span>Tech: SQL, PL/SQL</span>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="./images/intro-to-web.png" alt="CRUD Project"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/CRUD-operation" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>CRUD Operation Web App</h3>
+            <p class="project-description">
+              Full-stack CRUD application demonstrating create, read, update, and delete operations 
+              with backend logic and persistent data handling.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/CRUD-operation" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="java">
+          <div class="project-image">
+            <img src="./images/backend.png" alt="Java Exercises"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/exercises" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Java Programming Exercises</h3>
+            <p class="project-description">
+              Comprehensive collection of Java exercises that showcase core object-oriented programming, 
+              loops, conditions, and algorithmic problem-solving.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Algorithms</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/exercises" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="database">
+          <div class="project-image">
+            <img src="./images/intro-to-web.png" alt="SQL Capstone"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/-Thur_26229_Blaise_plsql_CapstoneProject" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>PL/SQL Capstone Project</h3>
+            <p class="project-description">
+              Advanced database capstone project implementing schema design, stored procedures, 
+              triggers, and complex SQL queries.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">PL/SQL</span>
+              <span class="tech-tag">Database Design</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/-Thur_26229_Blaise_plsql_CapstoneProject" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="java">
+          <div class="project-image">
+            <img src="./images/react.png" alt="The Foreigners"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/THE_FOREIGNERS" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>THE_FOREIGNERS</h3>
+            <p class="project-description">
+              Software project demonstrating practical development experience and experimentation 
+              with application logic and system design.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">System Design</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/THE_FOREIGNERS" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="./images/intro-to-web.png" alt="Works Repository"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Works" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Works Repository</h3>
+            <p class="project-description">
+              Dynamic collection of small projects, prototypes, and experiments built during 
+              continuous learning and hands-on practice.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Works" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="java">
+          <div class="project-image">
+            <img src="./images/backend.png" alt="Experimental Project"/>
+            <div class="project-overlay">
+              <a href="https://github.com/ReponseBlaise/Tesr" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Experimental Project (Tesr)</h3>
+            <p class="project-description">
+              Experimental repository used for testing innovative ideas and strengthening 
+              programming fundamentals across different technologies.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Testing</span>
+            </div>
+            <a href="https://github.com/ReponseBlaise/Tesr" target="_blank" class="project-btn">Learn More</a>
+          </div>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/THE_FOREIGNERS" target="_blank">
-            THE_FOREIGNERS
-          </a>
-        </h3>
-        <p>
-          Software project demonstrating additional development experience and
-          practical experimentation with application logic.
-        </p>
-        <span>Tech: Java / Web</span>
+      <div class="view-all">
+        <a href="https://github.com/ReponseBlaise?tab=repositories" target="_blank" class="btn btn-primary">
+          See All Projects on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <p class="section-subtitle">What others say about working with me</p>
       </div>
 
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/Works" target="_blank">
-            Works Repository
-          </a>
-        </h3>
-        <p>
-          Collection of small projects, prototypes, and experiments built during
-          learning and practice.
-        </p>
-        <span>Tech: HTML, CSS, JavaScript</span>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="./images/hero.png" alt="Client"/>
+            <div>
+              <h4>John Doe</h4>
+              <p>Project Manager at Tech Company</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Blaise is an exceptional developer who consistently delivers high-quality work. 
+            His attention to detail and problem-solving skills are outstanding. Highly recommended!"
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="./images/hero.png" alt="Client"/>
+            <div>
+              <h4>Jane Smith</h4>
+              <p>UI/UX Lead at Design Studio</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Working with Blaise on UI/UX projects was fantastic. He brings both technical expertise 
+            and creative thinking, making him a valuable asset to any team."
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="./images/hero.png" alt="Client"/>
+            <div>
+              <h4>Alex Johnson</h4>
+              <p>CTO at Software Startup</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Blaise's full-stack capabilities are impressive. He writes clean code, communicates well, 
+            and is always eager to learn. A true professional."
+          </p>
+          <div class="testimonial-rating">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on something amazing</p>
       </div>
 
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ReponseBlaise/Tesr" target="_blank">
-            Tesr (Experimental Project)
-          </a>
-        </h3>
-        <p>
-          Experimental repository used for testing ideas and strengthening
-          programming fundamentals.
-        </p>
-        <span>Tech: Java / JavaScript</span>
-      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4>Email</h4>
+            <p><a href="mailto:mushimiyumukizab@gmail.com">mushimiyumukizab@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <h4>Location</h4>
+            <p>Kigali, Rwanda</p>
+          </div>
+          <div class="contact-item">
+            <h4>Connect With Me</h4>
+            <div class="social-links-large">
+              <a href="https://github.com/ReponseBlaise" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/blaise-mushimiyumukiza" target="_blank">LinkedIn</a>
+              <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
 
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="error-message" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <span class="form-message" id="formMessage"></span>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Mushimiyumukiza Blaise | Kigali, Rwanda</p>
-    <p>
-      <a href="mailto:mushimiyumukizab@gmail.com">mushimiyumukizab@gmail.com</a>
-    </p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Blaise</h4>
+          <p>Software Developer & UI/UX Designer from Kigali, Rwanda.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="https://github.com/ReponseBlaise" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/blaise-mushimiyumukiza" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:mushimiyumukizab@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mushimiyumukiza Blaise. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Modal for project details (optional) -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div id="modalTech"></div>
+      <a id="modalLink" target="_blank" class="btn btn-primary">View Project</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
